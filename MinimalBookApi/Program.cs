@@ -56,7 +56,7 @@ app.MapPut("/book/{id}", (Book updateBook, int id) =>
     return Results.Ok();
 });
 
-app.MapGet("/book/{id}", (int id) =>
+app.MapDelete("/book/{id}", (int id) =>
 {
     var book = books.Find(b => b.Id == id);
 
